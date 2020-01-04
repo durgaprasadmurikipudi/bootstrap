@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <style>.height150px {
+      height: 150px;
+    }</style>
+    <title>Flex Box basics</title>
+  </head>
+  <body>
+    <div class="bg-white">
+      <p class="bg-success">
+        To start using flex box in bootstrap we have to mention the class d-flex
+        on the container that you want to apply
+      </p>
+      <p class="bg-warning">
+        justify-content in flexbox affects the horizontatl alignment of the
+        children in the container
+      </p>
+      <p class="bg-info">
+        align-items affects the vertical alignment of the children in the
+        container
+      </p>
+      <p class="bg-danger">
+        Direct children means, the direct siblings under the container, not the
+        children inside the siblings.
+      </p>
+    </div>
+    <div class="container-fluid bg-danger">
+      <div class="bg-success">We are gonna create a row and col inside it. Inside col there will be three paragraphs, notice the alignment of those paragraphs with different justify content variations of flexbox.</div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start config, notice on use of d-flex the 
+      p tags inside, became inline alignments and aligned side by side.
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger d-flex justify-content-start">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-end config</div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger d-flex justify-content-end">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-center config</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger d-flex justify-content-center">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-around config</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger d-flex justify-content-around">
+          <p class="bg-warning">I am the 1st p element </p>
+          <p class="bg-info">I am the 2nd p element </p>
+          <p class="bg-secondary">I am the 3rd p element </p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-between config</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger d-flex justify-content-between">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start config, but notice the elongation of elements, this is the default behaviour of elements if we did not mention align-items* config, the flex items elongate their height as accordingly to the height of the container. The container for demonstration purpose was set to have 150px height.
+      Notice that we need not hard code height 150px as perse, we can also set min-height and it will occupy as much height it can not going below min-height. use vh units isntead of px for more consistency across screens.
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start, align-items-start config, notice how the elongation is now absent.</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-start">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start, align-items-end config</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-end">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start align-items-center config</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-center">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start align-items-center config. we can also set each elements individual align-item config, by align-self-* config, allowed values, start, end, between. This below has first element as align-self-start</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-center">
+          <p class="bg-warning align-self-start">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start align-items-center config. This below, has second element as align-self-center</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-center">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info align-self-center">I am the second p element</p>
+          <p class="bg-secondary">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    <br><div class="bg-success">The col is given d-flex class and justify-content-start align-items-center config. third element has align-self-end</div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col bg-danger height150px d-flex justify-content-start align-items-center">
+          <p class="bg-warning">I am the first p element</p>
+          <p class="bg-info">I am the second p element</p>
+          <p class="bg-secondary align-self-end">I am the third p element</p>
+        </div>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

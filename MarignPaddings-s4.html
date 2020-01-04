@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>MArgins, paddings and width.</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="bg-primary m-5">I am a margin with m-5</div>
+      <div class="bg-warning m-4">I am a margin with m-4</div>
+      <div class="bg-danger m-3">I am a margin with m-3</div>
+      <div class="bg-secondary m-2">I am a margin with m-2</div>
+      <div class="bg-info m-1">I am a margin with m-1</div>
+      <div class="bg-success m-0">I am a margin with m-0</div>
+    </div> 
+    <div class="container-fluid">
+      <div class="bg-primary p-5">I am a padding with p-5</div>
+      <div class="bg-warning p-4">I am a padding with p-4</div>
+      <div class="bg-danger p-3">I am a padding with p-3</div>
+      <div class="bg-secondary p-2">I am a padding with p-2</div>
+      <div class="bg-info p-1">I am a padding with p-1</div>
+      <div class="bg-success p-0">I am a padding with p-0</div>
+    </div> 
+    <div class="container-fluid">
+        <div class="bg-primary m-5 p-5">I am a margin m-5 mixed with padding with p-5</div>
+        <div class="bg-warning m-4 p-4">I am a margin m-4 mixed with padding with p-4</div>
+        <div class="bg-danger m-3 p-3">I am a margin m-3 mixed with padding with p-3</div>
+        <div class="bg-secondary m-2 p-2">I am amargin m-2 mixed with padding with p-2</div>
+        <div class="bg-info m-1 p-1">I am a margin m-1 mixed with padding with p-1</div>
+        <div class="bg-success m-0 p-0">I am a margin m-0 mixed with padding with p-0</div>
+      </div> 
+    <div class="container-fluid">
+      <div class="bg-primary mt-5">I am a margin for only top with mt-5</div>
+      <div class="bg-warning mb-5">I am a margin for only bottom with mb-5</div>
+      <div class="bg-danger ml-5">I am a margin for only left with ml-5</div>
+      <div class="bg-secondary mr-5">I am a margin for only right mr-5</div>
+      <div class="bg-info mx-5">I am a margin for only along x-axis mx-5</div>
+      <div class="bg-success my-5">I am a margin for only along y-axis my-5</div>
+    </div> 
+    <div class="container-fluid">
+      <div class="bg-primary pb-5">I am a padding for bottom only pb-5</div>
+      <div class="bg-warning pt-5">I am a padding for top only pt-5</div>
+      <div class="bg-danger pl-5">I am a padding for left only pl-5</div>
+      <div class="bg-secondary pr-5">I am a padding for right only pr-5</div>
+      <div class="bg-info px-5">I am a padding for along x-axis only px-5</div>
+      <div class="bg-success py-5">I am a padding for along y-axis only py-5</div>
+    </div> 
+    <div class="container-fluid">
+      <div class="bg-primary w-25 mx-auto">I am a w-25  with mx-auto</div>
+      <div class="bg-danger w-50 mx-auto">I am a w-50 with mx-auto</div>
+      <div class="bg-info w-75 mx-auto">I am a w-75 with mx-auto</div>
+      <div class="bg-success w-100 mx-auto">I am a w-100 with mx-auto</div>      
+    </div>
+    <br />
+    <div class="bg-success">We can also add up sm, md classes like that so that they get activated only when thescreen size hits them or grows beyond</div>
+    <br />
+    <div class="bg-primary">So in conclusion the formula is {property}{sides}-{breakpoint}-{size}</div>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <title>Grid system</title>
+    <style>
+      body {
+        background: pink;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">Introduction to basic grid system</div>
+      </div>
+      <div class="row">
+        <div class="col bg-warning">
+          Grid system in boostrap is divided in 12 equidistant columns. A col
+          class mention on a div with out any size will simple occupy all 12
+          columns width. Like this one.
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col bg-info">
+          But if you mention 2 columns without any mention of size they each
+          occupy 6 column units.
+        </div>
+        <div class="col bg-danger">
+          Thus way paving way to basic grid system.
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm bg-info">
+          I can even mention that this division is only valid only above certain
+          screen sizes
+        </div>
+        <div class="col-sm bg-danger">
+          For example this column division wont be visible if you reduce the
+          screen size to less than 576px as this uses col-sm class.
+        </div>
+        <div class="col-sm bg-warning">Go ahead check it out!</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-7 bg-primary">
+          I can directly mention the column sizes as well, for e.g. this is
+          col-7 and checkout how it evenly spaces out as you increase and
+          decrease the screen size
+        </div>
+        <div class="col-3 bg-secondary">This is .col-3</div>
+        <div class="col-2 bg-info">This is col-2</div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-7 bg-primary">
+          What happens if we go beyond the limit 12 while mentioning the sizes,
+          for e.g. this is col-7
+        </div>
+        <div class="col-5 bg-secondary">
+          This is .col-5 and completes 12 column unit sizes
+        </div>
+        <div class="col-4 bg-info">
+          This is col-4, although this column belongs to same row, as there is
+          no way to fit this column, it takes a line break.
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-6 bg-primary">
+          Also an example of the same above, so the columns that can fit under
+          columns 12 unit scale as their relative classes sizes declared.
+        </div>
+        <div class="col-6 bg-secondary">
+          This column and preceding column belong to col-6 size and the scale
+          50-50
+        </div>
+        <div class="col-10 bg-info">
+          Although this column belongs to the same row as above columns, it
+          belongs to col-10 class and scales accordingly on 10th of 12 columns
+          ratio of available width.
+        </div>
+      </div>
+      <br />
+      <div class="row">
+        <div class="col-sm-6 col-md-3 col-lg-6 col-xl-12 bg-primary">
+          We can even mix up the col and sm classes such that, the col sizes act
+          only when the criteria of screen size for sm or md or lg meets
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 col-xl-12 bg-secondary">
+          For example all the 4 columns of this row are made to act as 2 rows in
+          case of sm, single row in case of md, again 2 rows in case of lg and
+          then as independent rows in case of xl
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 col-xl-12 bg-warning">
+          go ahead and move checkit out
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-6 col-xl-12 bg-danger">
+          classes used, col-sm-6, col-md-3, col-lg-6, col-xl-12 col-lg-6
+          col-xl-12
+        </div>
+      </div>
+
+      <br />
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6 bg-danger">Inside a col-6 column, we have another row with 2 columns each</div>
+            <div class="col-6 bg-warning">Inside a col-6 column, we have another row with 2 columns each</div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6 bg-primary">Inside a col-6 column, we have another row with 2 columns each</div>
+            <div class="col-6 bg-seconday">Inside a col-6 column, we have another row with 2 columns each</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
