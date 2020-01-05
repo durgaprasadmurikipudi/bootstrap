@@ -43,7 +43,7 @@ img.regular-img-size {
   width: 888px;
 }
 
-#filler {
+#filler, #progress {
   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/Project01.jpg);
   background-size: cover;
   background-position: center;
