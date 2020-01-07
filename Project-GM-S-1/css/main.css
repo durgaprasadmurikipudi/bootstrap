@@ -19,6 +19,32 @@ body {
   color: var(--mainBlack);
 }
 
+/* global styles start */
+.btn-pink {
+  color: var(--mainPink) !important;
+  border: 0.1rem solid var(--mainPink) !important;
+}
+
+
+.btn-pink:hover {
+  color: var(--mainBlack) !important;
+  border: 0.1rem solid var(--mainBlack) !important;
+}
+
+
+.btn-black {
+  color: var(--mainBlack) !important;
+  border: 0.1rem solid var(--mainBlack) !important;
+}
+
+
+.btn-black:hover {
+  color: var(--mainPink) !important;
+  border: 0.1rem solid var(--mainPink) !important;
+}
+
+/* global styles end */
+
 /* Nav bar links styles start */
 .navbar-toggler {
   outline: none !important;
@@ -81,7 +107,8 @@ body {
 }
 
 .banner-title {
-  color: yellow
+  color: yellow;
+  font-size: 6rem;
 }
 
 .banner-link {
@@ -95,4 +122,30 @@ body {
   color: var(--mainPink);
   border-color: var(--mainPink);
 }
+/*banner styles end*/
+
+/* about section styles start */
+
+.about-img__container {
+  position: relative;
+}
+
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.7rem;
+  left: -1.5rem;
+  height: 100%;
+  width: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+
+/* about section styles end */
 
