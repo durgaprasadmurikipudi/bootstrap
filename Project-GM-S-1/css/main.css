@@ -1,0 +1,98 @@
+#logo {
+  height: 48px;
+  width: 48px
+}
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249,229,148);
+  --mainWhite: #ffffff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249,229,148,0.5);
+  --pinkTrans: rgba(204, 134, 192, 0.5);
+  --mainGrey: rgb(238,238,238);
+}
+
+body {
+  font-family: 'Inria Serif', sans-serif;
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+}
+
+/* Nav bar links styles start */
+.navbar-toggler {
+  outline: none !important;
+}
+
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainPink);
+}
+
+.nav-link {
+  font-size: 1.5rem;
+  color: var(--mainPink);
+  transition: all 1s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+/* Nav bar links styles end */
+
+/* cart styles start */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  padding: 0.4rem 0.6rem;
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.cart-info:hover {
+  color: var(--mainWhite);
+  border: var(--mainPink);
+  background-color: var(--mainPink);
+}
+
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+/* cart styles end */
+
+/* banner styles start */
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--pinkTrans), var(--pinkTrans)), url(../images/img-cart/background-banner.jpg);
+  background-position: center;
+  background-position: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner {
+  color: var(--mainWhite);
+}
+
+.banner-title {
+  color: yellow
+}
+
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);  
+}
+
+.banner-link:hover {
+  background-color: white;
+  color: var(--mainPink);
+  border-color: var(--mainPink);
+}
+
