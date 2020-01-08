@@ -149,3 +149,14 @@ body {
 
 /* about section styles end */
 
+/* store styles start */
+.search-box {
+  color: var(--mainBlack);
+  background-color: var(--mainPink);
+}
+
+.store {
+  background-color: var(--mainGrey);
+}
+/* store styles end */
+
