@@ -192,9 +192,82 @@ additionally below the p tag, you can put a button.
 
 Bootstrap also provides the options for card-footer with the class under the same name.
 font awesome icons are provided for social media links for each team member.
-To neatly arrange this inside card-footer we are adding along with card-footer bg-secondary.d-flx.justify-content-around.
+To neatly arrange this inside card-footer we are adding along with card-footer bg-secondary.d-flex.justify-content-around.
 
-And that is how a crd is designed and with few of these is how you introduce them to the world!
+And that is how a card is designed and with few of these is how you introduce your team to the world!
+
+And next is the most awaited carousel ->
+
+Now we start it by 
+section#section.py-5.bg-primary.
+For beautiful carousel images, a blue background ofcourse.
+You open a container>
+First row is ofcourse for the title as done for the sections above.
+Now in another row, 
+row>.col-md-8.text-center.mx-auto.
+Making a col-8 size and mx-auto to make it center.
+
+Now the carousel begins,
+#carousel-example.carousel.slide -> div. For this div, we also have data-ride attribute, set to 'carousel'.
+Inside this div, ul.carousel-indicators, to make the li items look like a underscore on which you can click, positioned down below carousel to slide into specific slide.
+
+each li item is an empty tag having data-target attribute set to the enclosing parent div. also data-slide attribute set to specific index of slide it is representing.
+
+The sibling of this ul tag, is a div, having class carousel-inner. Inside it div.carousel-item representing the slide. this div has a child image of which becomes the slide. to make any slide active, we have to also add active beside class carousel-item as well.
+
+We can add prev and next buttons to the carousel's as well, by setting the class carousel-control-prev to anchor link and also mention data-slide attribute value as 'prev' or next. we have to mention href target to the enclosing parent div.carousel. 2 of these and we have prev adn next buttons for the carousel.
+
+Bootstrap takes care of the positioning of these buttons and also that underscore buttons which let you select a specific slide.
+
+Also darling, we can set background images for any div by mentioning their id in css and setting the background-image proeprty.
+an example:
+#filler, #progress {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/Project01.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+see the linear-gradient value? it is used to give a special effect in form of a tan in the desired color.
+Background-size: telling to cover the whole div, -position to show the central part of image while displaying the div. the -attchment is cool, as you scroll the div, if image is big and the div is considerably smaller than image, as you scroll the div, you can see the entire image. AS if viewing from a binoculars, you have to do a slide up and down to cover the whole image.
+
+Also to make the image responsive, use img-fluid class and as well as img-thumbnail to give it white border.
+
+Contact section:
+section#contact.py-5.bg-warning>.container
+A row for the title, second row for the actual content. Inside this there are 2 columns, .col-md-6 of size oen for form and another for map.
+
+The form is placed inside a card, no header, no footer. card.card-body.bg-secondary.
+Indie this body, a title, div.card-title.text-center.text-white.
+inside this title div, 2 siblings, h3 with text capitalize and p with description.
+A sibling of this div title is form tag.
+Inside the form is input fields placed in the form below:
+.form-group.mt-3>input.form-control,form-control-lg
+An interesting variant is the input-group instead of form-group.
+.input-group.my-3>
+(.input-group-prepend>.input-group-text>i.fas.fa-user+
+the above is user icon, now the main control is text box tightly prepended with above user icon.
+main control is input.form-control.
+Now for the prepend, div.input-group-append, you can keep a button here.
+
+and for the map in other column, just embed any google mpas in iframe. for this jsut share the google location as 'embed in inframe' and you get the required html.
+
+And do you know, that images can be kept as oval shaped, by class rounded-circle. To hide somethings in smaller screens, just use d-none. and then also place d-md-block or d-lg-block, to make them display in screens having size > than md or lg respectively.
+
+Bootstrap, offers a impressive progress bar sections. you need to use 2 div's. One div to set the background and mention the class progress on it.
+Now place adiv inside it with progress-bar and w-# class to make the div appear as some progress bar and with a different bg-color to contrast it.
+
+And bootstrap also privides modal functional from out of the box. For more on it take a look in index.html
+
+
+
+
+
+
+
+
+
 
 
 
