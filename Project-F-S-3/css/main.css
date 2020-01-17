@@ -17,3 +17,185 @@ body {
 .text-slanted {
   font-family: 'Dancing Script', cursive;
 }
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.btn-yellow {
+  background-color: var(--mainYellow);
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: var(--mainBlack);
+  border-radius: 0.4rem !important;
+}
+
+.btn-yellow:hover {
+  background-color: var(--mainBlack);
+  color: var(--mainYellow);
+}
+
+/* #################################### Home Page ################################## */
+/* start of navbar */
+.navbar-toggler {
+  outline: none !important;
+  border: none;
+  font-size: 2.2rem;
+  color: var(--mainYellow) !important;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  border-bottom: 0.1rem solid var(--mainWhite);
+}
+
+.nav-link:hover {
+  border-bottom: 0.1rem solid var(--mainYellow);
+}
+
+.navbar-icon {
+  font-size: 1.6rem;
+}
+
+.navbar-cart-icon {
+  color: var(--mainBlack);
+  position: relative;
+}
+
+.navbar-cart-icon:hover {
+  color: var(--mainGrey);
+}
+
+.cart-items-count {
+  color: var(--mainWhite);
+  position: absolute;
+  top: -25%;
+  right: -15%;
+  background-color: var(--mainYellow);
+  border-radius: 50%;
+  font-size: 1rem;
+}
+/* end of navbar */
+
+/* start of banner */
+.banner {
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/page-bcg-images/4.jpg') center/cover fixed no-repeat;
+  min-height: calc(100vh - 101px);
+}
+/* end of banner */
+
+/* start of featured section */
+.featured-container img {
+  width: 300px;
+  height: 156px;
+}
+
+.featured-container {
+  position: relative;  
+  overflow: hidden;
+}
+
+.featured-search-icon {
+  background-color: var(--mainWhite);
+  display: inline-block;
+  padding: 0.4rem;
+  position: absolute;
+  top: 35%;
+  right: 0;
+  font-size: 1.2rem;
+  transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+
+.featured-container:hover .featured-search-icon{
+  transform: translateX(-110%);
+}
+
+.featured-store-link {
+  color: var(--mainBlack);
+  background-color: var(--mainYellow);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  top: 60%;
+  right: -64%;
+  transform: translateX(-110%);
+  transition: all 1s ease-in-out;
+}
+
+.featured-container:hover .featured-store-link {
+  transform: translateX(110%);
+  right: 42%;
+  text-decoration: none;
+  color: var(--mainWhite);
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+/* end of featured section */
+
+/* start of carousel */
+.carousel-item img {
+  width: 360px;
+  height: 120px;
+}
+
+.partners {
+  background-color: var(--TransGrey);
+}
+
+.carousel-control-prev {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(-50%);
+}
+ 
+
+.carousel-control-next {
+  font-size: 2.5rem;
+  color: var(--mainBlack);
+  transform: translateX(50%);
+}
+
+
+.carousel-control-prev:hover, .carousel-control-next:hover{
+  color: var(--mainBlack);
+}
+/* end of carousel */
+
+/* start of news letter */
+.form-icon {
+  background-color: var(--mainGrey);
+  color: var(--mainBlack);
+}
+/* end of news letter */
+
+/* start of skills section */
+.skills {
+  background-color: var(--mainBlack);
+}
+
+.skill-icon {
+  color: var(--mainYellow);
+  font-size: 2rem;
+}
+/* end of skills section */
+
+/* footer section start */
+.footer {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.footer-title {
+  border: 0.2rem solid var(--mainYellow);
+  padding: 0.4rem;
+}
+
+.footer-icon {
+  color: var(--mainYellow);
+}
+
+.footer-icon:hover {
+  color: var(--mainWhite);
+}
