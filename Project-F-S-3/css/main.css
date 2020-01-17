@@ -86,13 +86,14 @@ body {
 
 /* start of featured section */
 .featured-container img {
-  width: 300px;
+  width: 384px;
   height: 156px;
 }
 
 .featured-container {
   position: relative;  
   overflow: hidden;
+  background-color: var(--mainGrey);
 }
 
 .featured-search-icon {
@@ -102,13 +103,13 @@ body {
   position: absolute;
   top: 35%;
   right: 0;
-  font-size: 1.2rem;
-  transform: translateX(110%);
+  font-size: 1.2rem;  
+  transform: translate(100%);
   transition: all 1s ease-in-out;
 }
 
 .featured-container:hover .featured-search-icon{
-  transform: translateX(-110%);
+  transform: translateX(0);
 }
 
 .featured-store-link {
@@ -117,14 +118,13 @@ body {
   padding: 0.2rem 0.4rem;
   position: absolute;
   top: 60%;
-  right: -64%;
-  transform: translateX(-110%);
+  right: 0;  
+  transform: translateX(100%);
   transition: all 1s ease-in-out;
 }
 
-.featured-container:hover .featured-store-link {
-  transform: translateX(110%);
-  right: 42%;
+.featured-container:hover .featured-store-link {    
+  transform: translateX(0);
   text-decoration: none;
   color: var(--mainWhite);
 }
@@ -199,3 +199,100 @@ body {
 .footer-icon:hover {
   color: var(--mainWhite);
 }
+
+/* end of footer section */
+
+/* services section start */
+.service-icon {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 0.5rem 1.4rem;
+  color: var(--mainYellow);
+  background-color: var(--mainGrey);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+/* end of services section */
+
+/* start of categories section */
+.category-img {
+  height: 120px;
+  width: 360px;
+}
+
+.categories-link {
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+
+.categories-link:hover {
+  color: var(--mainYellow);
+  text-decoration: none;
+}
+
+.category-underline {
+  height: 0.1rem;
+  width: 5rem;
+  background-color: var(--mainYellow);
+}
+
+.category-container {
+  position: relative;
+  transition: all 3s linear;
+  overflow: hidden;
+}
+
+.category-container:hover .category-img {
+  opacity: 0.5;
+}
+
+.category-link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.6rem;
+  text-decoration: none;
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  opacity: 0;
+  transform: all 1s linear;
+}
+
+.category-container:hover .category-link {
+  opacity: 1;
+  text-decoration: none;
+  color: var(--mainBlack);
+}
+/* end of categories section */
+
+/* ########################################## Products page ########################################## */
+
+/* banner section */
+
+.banner-products {
+  background: linear-gradient(rgba(255, 255, 255,0.5), rgba(255, 255, 255,0.5)), url('../images/page-bcg-images/2.jpg') center/cover fixed no-repeat;
+  min-height: calc(100vh - 101px);
+}
+
+/* end of banner section */
+
+/* ########################################## Single product page ########################################## */
+/* single product section */
+
+.banner-single-product {
+  background: linear-gradient(rgba(255, 255, 255,0.5), rgba(255, 255, 255,0.5)), url('../images/page-bcg-images/1.jpg') center/cover fixed no-repeat;
+  min-height: calc(100vh - 101px);
+}
+
+/* end of single product section */
+
+/* ########################################## Store page ########################################## */
+/* store section */
+
+.banner-store {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/page-bcg-images/3.jpg') center/cover fixed no-repeat;
+  min-height: calc(100vh - 101px);
+}
+
+/* end of store section */

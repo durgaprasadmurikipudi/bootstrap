@@ -30,7 +30,7 @@
           <li class="nav-item mx-2 nav-active"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item mx-2"><a href="products.html" class="nav-link">Products</a></li>
           <li class="nav-item mx-2"><a href="singleproduct.html" class="nav-link">Single Product</a></li>
-          <li class="nav-item mx-2"><a href="store.html" class="nav-link">Store</a></li>          
+          <li class="nav-item mx-2"><a href="store.html" class="nav-link">Store</a></li>
         </ul>
       </div>
       <div class="navbar-icons d-none d-lg-flex">
@@ -39,12 +39,12 @@
           <i class="fas fa-search"></i>
         </div>
         <!-- end of single icon -->
-          <a href="store.html" class="navbar-icon mx-2 navbar-cart-icon">
-            <i class="fas fa-shopping-cart"></i>
-            <div class="cart-items-count">
-              2
-            </div>
-          </a>
+        <a href="store.html" class="navbar-icon mx-2 navbar-cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <div class="cart-items-count">
+            2
+          </div>
+        </a>
         <!-- end of single icon -->
       </div>
     </nav>
@@ -58,6 +58,109 @@
     </div>
   </header>
   <!-- end of header -->
+
+  <!-- start of services section -->
+  <section id="services" class="services py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <!-- single service -->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <span class="service-icon">
+            <i class="fas fa-parachute-box"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase">free shipping</h5>
+          <p class="text-muted text-capitalize">Free shipping for all over 100$</p>
+        </div>
+        <!-- end single service -->
+        <!-- single service -->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <span class="service-icon">
+            <i class="fas fa-phone-volume"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase">online support 24/7</h5>
+          <p class="text-muted text-capitalize">we will assist you with all your inquiries 24/7</p>
+        </div>
+        <!-- end single service -->
+        <!-- single service -->
+        <div class="col-10 mx-auto col-md-6 col-lg-4 my-3">
+          <span class="service-icon">
+            <i class="fas fa-dollar-sign"></i>
+          </span>
+          <h5 class="font-weight-bold text-uppercase">money back guarantee</h5>
+          <p class="text-muted text-capitalize">100% money refund for 30 days.</p>
+        </div>
+        <!-- end single service -->
+      </div>
+    </div>
+  </section>
+  <!-- end of services section -->
+
+  <!-- start of categories section -->
+  <section id="categories" class="categories py-5">
+    <div class="container">
+      <div class="row">
+        <!-- category title -->
+        <div class="col-10 mx-auto col-md-6 col-lg-3 align-self-center">
+          <h5 class="text-uppercase">product categories</h5>
+          <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sint accusamus ut illo quod reiciendis!</p>
+          <a href="products.html" class="text-weight-bold text-capitalize categories-link">view all categories</a>
+          <div class="category-underline"></div>
+        </div>
+        <!-- end of category title -->
+        <!-- start of category info -->
+        <div class="col-10 mx-auto col-md-6 col-lg-9">
+          <div class="row">
+            <!-- single category -->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="/images/category-images/bathroom.jpg" alt="" class="img-fluid category-img">
+                <a href="products.html" class="category-link">
+                  <h6 class="text-uppercase mb-0">bathroom</h6>
+                  <p class="mb-0 text-yellow">20 items</p>
+                </a>
+              </div>
+            </div>
+            <!-- end of single category-->
+            <!-- single category -->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="/images/category-images/kitchen.jpg" alt="" class="img-fluid category-img">
+                <a href="products.html" class="category-link">
+                  <h6 class="text-uppercase mb-0">kitchen</h6>
+                  <p class="mb-0 text-yellow">20 items</p>
+                </a>
+              </div>
+            </div>
+            <!-- end of single category-->
+            <!-- single category -->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="/images/category-images/patio-table-and-chair-set-on-a-garden-2565222.jpg" alt="" class="img-fluid category-img">
+                <a href="products.html" class="category-link">
+                  <h6 class="text-uppercase mb-0">patio</h6>
+                  <p class="mb-0 text-yellow">20 items</p>
+                </a>
+              </div>
+            </div>
+            <!-- end of single category-->
+            <!-- single category -->
+            <div class="col-md-6 col-lg-3 my-3">
+              <div class="category-container">
+                <img src="/images/category-images/living-room-with-furnitures-3457299.jpg" alt="" class="img-fluid category-img">
+                <a href="products.html" class="category-link">
+                  <h6 class="text-uppercase mb-0">living room</h6>
+                  <p class="mb-0 text-yellow">20 items</p>
+                </a>
+              </div>
+            </div>
+            <!-- end of single category-->
+          </div>          
+        </div>
+        <!--end of category info -->
+      </div>
+    </div>
+  </section>
+  <!-- end of categories section -->
 
   <!-- start of featured products -->
   <section id="featured" class="featured py-5">
@@ -76,7 +179,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/1.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -90,7 +194,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/2.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -104,7 +209,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/3.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -120,7 +226,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/4.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -134,7 +241,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/5.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -148,7 +256,8 @@
         <div class="col-10 col-md-6 col-lg-4">
           <div class="featured-container p-3">
             <img src="./images/product-images/6.jpg" alt="" class="img-fluid">
-            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i class="fas fa-search"></i></span>
+            <span class="featured-search-icon" data-toggle="modal" data-target="#productModal"><i
+                class="fas fa-search"></i></span>
             <a href="#" class="featured-store-link text-capitalize">add to cart</a>
           </div>
           <h6 class="text-capitalize text-center my-2">special product</h6>
@@ -202,8 +311,10 @@
               </div>
               <!-- end single item -->
             </div>
-            <a href="#partner-carousel" class="carousel-control-prev" role="button" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
-            <a href="#partner-carousel" class="carousel-control-next" role="button" data-slide="next"><i class="fas fa-arrow-right"></i></a>
+            <a href="#partner-carousel" class="carousel-control-prev" role="button" data-slide="prev"><i
+                class="fas fa-arrow-left"></i></a>
+            <a href="#partner-carousel" class="carousel-control-next" role="button" data-slide="next"><i
+                class="fas fa-arrow-right"></i></a>
           </div>
         </div>
         <!-- end of company carousel -->
@@ -221,7 +332,8 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, laudantium.</p>
           <form>
             <div class="input-group mt-5 mb-4">
-              <input type="text" name="email" id="email" class="form-control text-capitalize" placeholder="enter your email">
+              <input type="text" name="email" id="email" class="form-control text-capitalize"
+                placeholder="enter your email">
               <div class="input-group-append">
                 <div class="input-group-text form-icon">
                   <i class="fas fa-envelope"></i>
@@ -247,7 +359,8 @@
           </div>
           <div class="skill-text">
             <h3 class="text-capitalize text-white">free shipping</h3>
-            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptas.</p>
+            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+              voluptas.</p>
           </div>
         </div>
         <!-- end of of single skill -->
@@ -258,7 +371,8 @@
           </div>
           <div class="skill-text">
             <h3 class="text-capitalize text-white">price promise</h3>
-            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptas.</p>
+            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+              voluptas.</p>
           </div>
         </div>
         <!-- end of of single skill -->
@@ -269,7 +383,8 @@
           </div>
           <div class="skill-text">
             <h3 class="text-capitalize text-white">lifetime warranty</h3>
-            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, voluptas.</p>
+            <p class="text-muted text-capitalize">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+              voluptas.</p>
           </div>
         </div>
         <!-- end of of single skill -->
@@ -283,7 +398,8 @@
     <div class="container">
       <div class="row">
         <div class="col-10 mx-auto text-center">
-          <h1 class="text-center text-yellow text-uppercase font-weight-bold d-inline-block footer-title">Comfy Dope!</h1>
+          <h1 class="text-center text-yellow text-uppercase font-weight-bold d-inline-block footer-title">Comfy Dope!
+          </h1>
           <div class="footer-icons d-flex justify-content-center">
             <!-- single icon start -->
             <a href="#" class="footer-icon mx-2"><i class="fab fa-facebook"></i></a>
@@ -301,16 +417,20 @@
             <a href="#" class="footer-icon mx-2"><i class="fab fa-twitter"></i></a>
             <!-- single icon end -->
           </div>
-          <p class="text-muted text-capitalize text-right w-75 mx-auto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea dicta animi provident dolorem maxime cum?</p>
+          <p class="text-muted text-capitalize text-right w-75 mx-auto">Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Ea dicta animi provident dolorem maxime cum?</p>
           <div class="footer-contact mt-5 d-flex justify-content-around flex-wrap text-white">
             <!-- single contact start -->
-            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-map"></i></span>123, Main street, Los Angeles</div>
+            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-map"></i></span>123, Main
+              street, Los Angeles</div>
             <!-- single contact end -->
             <!-- single contact start -->
-            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-phone"></i></span>+ (123) 456 789</div>
+            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-phone"></i></span>+ (123) 456
+              789</div>
             <!-- single contact end -->
             <!-- single contact start -->
-            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-envelope"></i></span>Email: emai@email.com</div>
+            <div class="text-capitalize"><span class="footer-icon mr-2"><i class="fas fa-envelope"></i></span>Email:
+              emai@email.com</div>
             <!-- single contact end -->
           </div>
         </div>
