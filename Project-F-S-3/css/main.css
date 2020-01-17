@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans&display=swap');
+
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0,0,0,0.1);
+}
+
+body {
+  color: var(--mainBlack);
+  background-color: var(--mainWhite);
+  font-family: 'Josefin Sans', cursive;
+}
+
+.text-slanted {
+  font-family: 'Dancing Script', cursive;
+}
