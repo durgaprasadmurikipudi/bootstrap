@@ -302,6 +302,12 @@ img.img-logo {
 }
 /* end of tour section */
 
+/* start of footer section */
+#footer {
+  background-color: var(--mainDark);
+}
+/* end of footer section */
+
 
 
 
